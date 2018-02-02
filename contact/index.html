@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Max Miguta Personal Profile</title>
+<!--add bootstrap css files here-->
+<link rel='stylesheet' href='../bootstrap/css/bootstrap.min.css'>
+<link rel='stylesheet' href='../style.css'>
+<link rel='icon' href='../favicon.ico'>
+<style>
+</style>
+</head>
+<body>
+<div id="img-bg">
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="javascript:;">Max Miguta</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../skills/index.html">Skills</a></li>
+			<li class="active"><a href="javascript:;">Contact</a></li><!--add active class to highlight link of the current page-->
+		</ul>
+	</div>
+</nav>
+<div class="main-font">
+<section class="main-container">
+<article class="container">
+	<h1>Contact Me</h1>
+	<br>
+	<p>Please fill out the form if you would like to get in touch in order to find out more about my <b>work history</b> or if you think my <b>design skills</b> would be of benefit to your company or project. I shall endeavour to reply as soon as possible.</p>
+	<br>
+	<div id="form-area">
+	<form onsubmit="alert('Form submitted successfully.')" method="post">
+		<fieldset>
+			<legend>Contact Form</legend>
+			<label for="fname" class="field">First name:</label>
+			<input type="text" id="fname" placeholder="Enter your first name" name="fname" autocomplete="on" required autofocus />
+			<label for="lname" class="field">Last name:</label>
+			<input type="text" id="lname" placeholder="Enter your last name" name="lname" autocomplete="on" required />
+			<label for="email" class="field">Email:</label>
+			<input type="email" id="email" placeholder="Enter your email" name="email" autocomplete="on" required />
+			<label for="telephone" class="field">Telephone:</label>
+			<input type="tel" id="telephone" placeholder="Enter your number" name="telephone" pattern="[0][0-9]{10}" title="Expecting 11 digit number beginning with 0" />
+			<label for="comm" class="field">Comments:</label>
+			<textarea id="comm" placeholder="Enter any comments" name="comm"></textarea>
+			<label for="submit" class="field submit"></label>
+			<input type="submit" id="submit" value="Submit"/>
+		</fieldset>
+	</form>
+	</div>
+</article>
+<article class="flex-center">
+	<div class="socials"><a href="https://www.facebook.com/max.miguta"><img src="../img/blue_facebook.jpg" alt="My Facebook page" /></a></div>
+	<div class="socials"><a href="https://uk.linkedin.com/in/max-miguta-37216268"><img src="../img/blue_linkedin.jpg" alt="My LinkedIn page" /></a></div>
+	<div class="socials"><a href="https://www.instagram.com/max_miguta"><img src="../img/blue_instagram.jpg" alt="My Instagram page" /></a></div>
+</article>
+</section>
+<footer id="footer">
+	<div class="frame">
+		<div id="copyright">&copy; Max Miguta 2018</div>
+		<!--Date is placed at target ID below on page load-->
+		<div id="date"></div>
+	</div>
+</footer>
+</div>
+</div>
+<!--Bootstrap core JS files-->
+<script src='http://code.jquery.com/jquery.min.js'></script>
+<script src='../bootstrap/js/bootstrap.min.js'></script>
+<!--Custom JS files-->
+<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

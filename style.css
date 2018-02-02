@@ -1,0 +1,317 @@
+html {
+	font-family: 'Arial', sans-serif;
+}
+body {
+	background-image: url(img/x-repeat.jpg);
+	background-repeat: repeat-x;
+}
+/*Added new size classes to allow more options on tiny screens*/
+@media (min-width: 461px) and (max-width: 767) {
+	.col-xs-12 {
+		width: 100%;
+	}
+	.col-xs-6 {
+		width: 50%;
+	}
+}
+@media (max-width: 460px) {
+	.col-ss-12 {
+		width: 100%;
+	}
+	.col-ss-6 {
+		width: 50%;
+	}
+}
+/*Overwrite Bootstrap link (a) styling*/
+/*those settings appear to be on lines 1099 - 1107*/
+/*it appears the hover state is inherited from this*/
+#work1,
+#work2,
+#work3 {
+	text-decoration: none;
+	color: #333;
+}
+/*In case I want to enable custom hover
+#work1:hover,
+#work1:focus {
+	text-decoration: underline;
+	color: red;
+}*/
+/*using Bootstrap glyphicons as bullet points*/
+li.chevron {
+    display: block;
+}
+li.chevron:before {
+	content: "\e080";
+	font-family: 'Glyphicons Halflings';
+	font-size: 12px;
+	margin-top: 4px;
+	margin-left: -17px;
+	color: #015d8e;
+}
+/*contains the main background image*/
+#img-bg{
+	background-image: url(img/background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-top: 100px; /*pushes navbar down along with everything else*/
+}
+/*adjust font size in the main content area*/
+.main-font {
+	font-size: 15px;
+}
+/*wraps all the other containers and adds resting space before the footer*/
+.main-container {
+	margin-bottom: 50px;
+}
+/*add flexbox properties to center socials buttons*/
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+.flex-around {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 10px;
+}
+/*acts as a button*/
+.box {
+	width: ;
+	height: ;
+	text-align: center;
+	line-height: 80px; /*vertically center text*/
+	color: #b8e7ff;
+	background-color: #015d8e;
+	margin: 10px 0px;
+	border-width: 10px;
+	border-radius: 20px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: #b8e7ff;
+	cursor: pointer;
+}
+.smaller-l {
+	width: ;
+	height: 100px;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	cursor: default;
+}
+.smaller-r {
+	width: ;
+	height: 100px;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	cursor: default;
+}
+.xtramrg {
+	margin: 20px 0px;
+}
+.xtramrg:hover {
+	opacity: 0.6;
+}
+.site-image {
+	width: 100%; /*enable the images to resize proportionally*/
+}
+.socials {
+	margin: 0px 10px;
+}
+.socials:hover {
+	opacity: 0.6;
+}
+
+/*Display window (background)*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/*Window content*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /*15% from the top and centered*/
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%; /*Could be more or less, depending on screen size*/
+}
+/*Close button*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#footer {
+	height: 250px;
+	background-image: url(img/footer.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 200px;
+	padding-right: 0px;
+	padding-left: 0px;
+	font-weight: bold;
+}
+/*'container' for the footer*/
+.frame {
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 768px) {
+	.frame {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.frame {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.frame {
+		width: 1170px;
+	}
+}
+#date {
+	height: 30px;
+	width: 300px;
+}
+#copyright {
+	height: 30px;
+	width: 200px;
+	float: right;
+	text-align: right;
+}
+
+/*Contact Form CSS*/
+#form-area {
+	width: 450px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+fieldset {
+	width: 450px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	clear: both;
+	padding: 20px;
+	margin-bottom: 50px;
+	background-color:rgba(129, 187, 201, .3);
+}
+legend {
+	width: auto; /*overwrite Bootstrap's width: 100%;*/
+	font-size: 25px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #999;
+	padding: 4px 15px;
+}
+label.field {
+	display: block;
+	text-align: right;
+	width: 100px;
+	float: left;
+	clear: both;
+}
+input {
+	display: inline-block;
+	width: 270px;
+	border-radius: 5px;
+	padding: 6px 8px;
+	margin-top: 6px;
+	margin-left: 5px;
+}
+textarea {
+	width: 270px;
+	height: 100px;
+	border-radius: 5px;
+	padding: 6px 8px;
+	margin-top: 6px;
+	margin-left: 5px;
+	border: 2px inset #eee;
+}
+/*amend the labels*/
+.field{
+	padding: 9px 8px;
+}
+label.submit{
+	margin-bottom: 40px;
+	margin-left: px;
+}
+
+/*Amend some Bootstrap default values*/
+/*add some space above the navbar menu and remove rounded corners*/
+.navbar {
+  /*margin-top: 100px;*/
+  border-radius: 0px;
+}
+/*background colour for the whole length of the navbar menu*/
+.navbar-inverse {
+  background-color: #015d8e;
+  border-color: #004c74; /*change border colour from #015d8e to match bg-col of active page*/
+}
+/*text colour for the brand/title text on the collapsible nav menu*/
+.navbar-inverse .navbar-brand {
+  color: #b8e7ff;
+}
+/*text colour for all of the links on the collapsible nav menu*/
+.navbar-inverse .navbar-nav > li > a {
+  color: #b8e7ff;
+}
+/*text and background colour for the nav link of active/current page*/
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #004c74;
+}
+/*border colour for button of the collapsible nav menu*/
+.navbar-inverse .navbar-toggle {
+  border-color: #00669c;
+}
+/*background colour for button of the collapsible nav menu*/
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #00669c;
+}
+/*overwrite the "15px" default values*/
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/*overwrite the "-15px" default values*/
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+/*reduce padding down from "15px" for selected grid layouts*/
+.col-xs-12,
+.col-sm-4,
+.col-md-4,
+.col-lg-2 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/*overwrite initial close button colour*/
+.close {
+  opacity: 1;
+}
+/*overwrite hover state close button colour*/
+.close:hover,
+.close:focus {
+  opacity: 1;
+}
