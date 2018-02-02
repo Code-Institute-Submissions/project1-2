@@ -24,7 +24,7 @@ Users will be able to scroll down the pages that will guide them through my skil
 
 ## Technologies used
 
-### Some the tech used includes:
+### Some of the tech used includes:
 - HTML5
 - CSS3
 - JavaScript
