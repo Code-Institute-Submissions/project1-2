@@ -5,7 +5,11 @@ body {
 	background-image: url(img/x-repeat.jpg);
 	background-repeat: repeat-x;
 }
-/*Added new size classes to allow more options on tiny screens*/
+/*wraps around all <articles> and adds resting space before the footer*/
+section {
+	margin-bottom: 50px;
+}
+/*added new size classes to allow more options on tiny screens*/
 @media (min-width: 461px) and (max-width: 767) {
 	.col-xs-12 {
 		width: 100%;
@@ -22,6 +26,26 @@ body {
 		width: 50%;
 	}
 }
+/*contains the main background image*/
+#img-bg{
+	background-image: url(img/background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-top: 100px; /*pushes navbar down along with everything else*/
+	font-size: 15px;
+}
+/*using Bootstrap glyphicons as bullet points*/
+li.chevron {
+    display: block;
+}
+li.chevron:before {
+	content: "\e080";
+	font-family: 'Glyphicons Halflings';
+	font-size: 12px;
+	margin-top: 4px;
+	margin-left: -17px;
+	color: #015d8e;
+}
 /*Overwrite Bootstrap link (a) styling*/
 /*those settings appear to be on lines 1099 - 1107*/
 /*it appears the hover state is inherited from this*/
@@ -37,43 +61,6 @@ body {
 	text-decoration: underline;
 	color: red;
 }*/
-/*using Bootstrap glyphicons as bullet points*/
-li.chevron {
-    display: block;
-}
-li.chevron:before {
-	content: "\e080";
-	font-family: 'Glyphicons Halflings';
-	font-size: 12px;
-	margin-top: 4px;
-	margin-left: -17px;
-	color: #015d8e;
-}
-/*contains the main background image*/
-#img-bg{
-	background-image: url(img/background.jpg);
-	background-position: center top;
-	background-repeat: no-repeat;
-	padding-top: 100px; /*pushes navbar down along with everything else*/
-}
-/*adjust font size in the main content area*/
-.main-font {
-	font-size: 15px;
-}
-/*wraps all the other containers and adds resting space before the footer*/
-.main-container {
-	margin-bottom: 50px;
-}
-/*add flexbox properties to center socials buttons*/
-.flex-center {
-	display: flex;
-	justify-content: center;
-}
-.flex-around {
-	display: flex;
-	justify-content: space-around;
-	margin: 40px 10px;
-}
 /*acts as a button*/
 .box {
 	width: ;
@@ -110,11 +97,17 @@ li.chevron:before {
 .xtramrg:hover {
 	opacity: 0.6;
 }
+/*enable images on 'skills' page to resize with the browser window*/
 .site-image {
-	width: 100%; /*enable the images to resize proportionally*/
+	width: 100%;
+}
+/*add flexbox properties to center 'socials' buttons*/
+.flex-center {
+	display: flex;
+	justify-content: center;
 }
 .socials {
-	margin: 0px 10px;
+	margin: 10px 10px;
 }
 .socials:hover {
 	opacity: 0.6;
@@ -262,7 +255,7 @@ label.submit{
 /*background colour for the whole length of the navbar menu*/
 .navbar-inverse {
   background-color: #015d8e;
-  border-color: #004c74; /*change border colour from #015d8e to match bg-col of active page*/
+  border-color: #004c74; /*change border color from #015d8e to match bg-color of nav link for active page*/
 }
 /*text colour for the brand/title text on the collapsible nav menu*/
 .navbar-inverse .navbar-brand {
