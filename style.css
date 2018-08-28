@@ -193,6 +193,7 @@ li.chevron:before {
 #form-area {
 	/*width: 450px;*/
 	/*max-width: 450px;*/
+	float: none;
 	margin-top: 30px;
 	margin-right: auto;
 	margin-left: auto;
@@ -200,10 +201,11 @@ li.chevron:before {
 fieldset {
 	/*width: 450px;*/
 	border: 1px solid #999;
-	border-radius: 10px;
-	clear: both;
+	border-radius: 10px;	
 	padding: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 50px;	
+	margin-right: auto;
+	margin-left: auto;
 	background-color:rgba(129, 187, 201, .3);
 }
 legend {
@@ -239,12 +241,22 @@ textarea {
 	border: 2px inset #eee;
 }
 /*amend the labels*/
-.field{
+.field {
 	padding: 9px 8px;
 }
-label.submit{
-	margin-bottom: 40px;
-	margin-left: px;
+label.submit {
+	float: none;
+    margin-right: auto;
+	margin-left: auto;
+}
+/*to centre the Submit button*/
+.form-button {
+	display: block;
+	float: none;
+	margin-top: 20px;
+    margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
 }
 
 /*Amend some Bootstrap default values*/

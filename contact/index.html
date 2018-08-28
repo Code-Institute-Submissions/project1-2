@@ -36,7 +36,8 @@
 	<br>
 	<p>Please fill out the form if you would like to get in touch in order to find out more about my <b>work history</b> or if you think my <b>design skills</b> would be of benefit to your company or project. I shall endeavour to reply as soon as possible.</p>
 	<br>
-	<div id="form-area">
+	<div class="row"><!--this is to enable the form to centre while not at full width...-->
+	<div id="form-area" class="col-md-8"><!--...at medium (md) size or greater-->
 	<form onsubmit="alert('Form submitted successfully.')" method="post">
 		<fieldset>
 			<legend>Contact Form</legend>
@@ -60,10 +61,13 @@
 				<label for="comm" class="field col-xs-6">Comments:</label>
 				<textarea id="comm" placeholder="Enter any comments" name="comm" class="col-xs-10"></textarea>
 			</div>
-			<label for="submit" class="field submit"></label>
-			<input type="submit" id="submit" value="Submit" class="col-xs-10"/>
+			<div class="row">
+			<!--<label for="submit" class="field submit"></label>-->
+			<input type="submit" id="submit" value="Submit" class="form-button col-xs-12 col-sm-4"/>
+			</div>
 		</fieldset>
 	</form>
+	</div>
 	</div>
 </article>
 <article class="flex-center">
