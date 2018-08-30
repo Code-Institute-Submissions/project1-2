@@ -23,7 +23,7 @@ window.onclick = function(event) {
 /*Basic date display code*/
 window.onload = function() {
 	var d = new Date();
-	weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 	month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	var n = weekday[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
 	document.getElementById("date").innerHTML = n;
